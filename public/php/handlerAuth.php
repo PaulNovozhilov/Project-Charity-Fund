@@ -2,7 +2,7 @@
   header("Access-Control-Allow-Origin: *");
 	header('Access-Control-Allow-Credentials: true');
   session_start();
-  $mysqli = new mysqli('localhost','root','root','psnov555_fond');
+  $mysqli = new mysqli('localhost','psnov555_fond','&BpPQ2yc','psnov555_fond');
   $login = trim(mb_strtolower($_POST['login']));
   $password = trim($_POST['password']);
   $result = $mysqli->query("SELECT * FROM `users` WHERE `login`='$login'");
